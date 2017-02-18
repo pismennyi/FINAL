@@ -1,0 +1,75 @@
+.sliders {
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        background: none;
+        font-size: 0;
+        width: 45px;
+        height: 80px;
+        z-index: 99;
+        border: none;
+        outline: none;
+
+        &:hover {
+            &:before {
+                color: #006198;
+            }
+        }
+    }
+
+    .slick-prev {
+        left: 11%;
+        @media screen and (max-width: 1200px) {
+            left: 2%;
+        }
+
+        &::before {
+            content: url("../img/arrow-left.png");
+        }
+    }
+
+    .slick-next {
+        right: 10%;
+        @media screen and (max-width: 1200px) {
+            right: 2%;
+        }
+
+        &::before {
+            content: url("../img/arrow-right.png");
+        }
+    }
+
+    .slide {
+        outline: none;
+        margin-top: 100px;
+        margin-bottom: 65px;
+        position: relative;
+
+        .quotes {
+            position: absolute;
+            top: 0;
+            left: -65px;
+        }
+
+        .text,
+        .title {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .text {
+            font-style: italic;
+            margin-top: 20px;
+            margin-bottom: 25px;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px 0;
+        }
+    }
+}
